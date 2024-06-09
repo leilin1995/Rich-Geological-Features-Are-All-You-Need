@@ -18,7 +18,7 @@ Identifying geological structures from seismic images is a critical step in unde
     conda env create -f environment.yml
     conda activate RichGeo
 
-## 2. We provide [trained weights] !([Link]([https://wiki.cancerimagingarchive.net/display/Public/HNSCC](https://github.com/leilin1995/Rich-Geological-Features-Are-All-You-Need/tree/master/Results/Unet3D))) for 3D fault segmentation. You can use it to predict your own data and perform transfer learning. Please note that you need to normalize your data to the range of 0 to 1.
+## 2. We provide [trained weights](https://github.com/leilin1995/Rich-Geological-Features-Are-All-You-Need/tree/master/Results/Unet3D) for 3D fault segmentation. You can use it to predict your own data and perform transfer learning. Please note that you need to normalize your data to the range of 0 to 1.
 
 ## 3. Predict your own data. Please note that your data needs to be saved in .hdf5 format, and the internal path for the seismic data should be set to 'seismic'.
 ```bash
@@ -45,7 +45,7 @@ If the code and paper help your research, please kindly cite:
 This project is released under the [MIT license](LICENSE).
 
 # Test results
-
+We compare the deep learning model trained on the proposed dataset with the most popular open-source fault identification study, [FaultSeg3D](https://github.com/xinwucwp/faultSeg), on multiple datasets. The neural network architectures we use are both 3D U-net. The training dataset of FaultSeg3D contains only dip, fold, and fault structures. The training dataset of our model includes dip, fold, unconformity, channel, cave, salt body, and composite fault structures.
 
 ## Test on synthetic examples
 Fault identification results on three synthetic seismic cases. The first row shows the results from a case in the RichestSD test dataset. The second row presents results from a case in the FaultSegSD \cite{wu_faultseg3d_2019} validation dataset. The third row demonstrates results from a case in the ChannelSegSD \cite{gao_channelseg3d_2021} validation dataset. (a), (e), and (i) are input seismic images. (b), (f), and (j) show the labeled data. Note that (b) and (f) display fault labels, while (j) displays channel labels. (c), (g), and (k) present the fault probability predicted by the FaultSeg3D model \cite{wu_faultseg3d_2019} trained on the FaultSegSD dataset. (d), (h), and (l) display the fault probability predicted by the model trained on the RichestSD dataset proposed in this paper.![Figs/Synthetic.png](Figs/Synthetic.png)
@@ -60,4 +60,3 @@ Fault identification results on F3 dataset. (a) Seismic image. (b) Fault detecti
 
 ### LSOF
 Fault identification results on a field seismic image from offshore Louisiana. (a) Seismic image. (b) Fault prediction results using FaultSeg3D. (c) Fault detection results using the 3D U-net trained on the proposed dataset. (d) Channel probability map predicted by Gao et al. \cite{gao_channelseg3d_2021}. (e)-(h) Seismic, predicted fault, and channel slices at timeline 152.![Figs/LSOF.png](Figs/LSOF.png)
-
