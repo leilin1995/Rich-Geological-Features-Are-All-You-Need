@@ -18,7 +18,7 @@ Identifying geological structures from seismic images is a critical step in unde
     conda env create -f environment.yml
     conda activate RichGeo
 
-## 2. We provide [trained weights] ([Link]([https://wiki.cancerimagingarchive.net/display/Public/HNSCC](https://github.com/leilin1995/Rich-Geological-Features-Are-All-You-Need/tree/master/Results/Unet3D))) for 3D fault segmentation. You can use it to predict your own data and perform transfer learning. Please note that you need to normalize your data to the range of 0 to 1.
+## 2. We provide [trained weights] !([Link]([https://wiki.cancerimagingarchive.net/display/Public/HNSCC](https://github.com/leilin1995/Rich-Geological-Features-Are-All-You-Need/tree/master/Results/Unet3D))) for 3D fault segmentation. You can use it to predict your own data and perform transfer learning. Please note that you need to normalize your data to the range of 0 to 1.
 
 ## 3. Predict your own data. Please note that your data needs to be saved in .hdf5 format, and the internal path for the seismic data should be set to 'seismic'.
 ```bash
