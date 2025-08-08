@@ -38,7 +38,15 @@ python evaluation.py --label_dir=your_label_dir --pred_dir=your_pred_dir --save_
 # Citation
 If the code and paper help your research, please kindly cite:
 ```
-@article{
+@article{lin2025improved,
+  title={An improved parametric 3D geologic modeling framework for seismic structure identification using deep learning in complex geologic settings},
+  author={Lin, Lei and Li, Chenglong and Wei, Hao and Zhong, Zhi and Wang, Xuyu and Li, Qianyi and Gorman, Andrew},
+  journal={Geophysics},
+  volume={90},
+  number={3},
+  pages={IM81--IM102},
+  year={2025},
+  publisher={Society of Exploration Geophysicists}
 }
 ```
 # License
